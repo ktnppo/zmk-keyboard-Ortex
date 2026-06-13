@@ -131,22 +131,22 @@
 
         /* ROW（行）の定義：GPB0〜GPB4 ＝ 8〜12番ピンを使用 */
         row-gpios
-            = <&mcp23017  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB0 (R_ROW0)
-            , <&mcp23017  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB1 (R_ROW1)
-            , <&mcp23017 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB2 (R_ROW2)
-            , <&mcp23017 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB3 (R_ROW3)
-            , <&mcp23017 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB4 (R_ROW4)
-            , <&mcp23017 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB5 (R_ROW5)
+            = <&mcp23017  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB0 (ROW0)
+            , <&mcp23017  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB1 (ROW1)
+            , <&mcp23017 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB2 (ROW2)
+            , <&mcp23017 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB3 (ROW3)
+            , <&mcp23017 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB4 (ROW4)
+            , <&mcp23017 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB5 (ROW5)
             ;
 
         /* COL（列）の定義：GPA0〜GPA5 ＝ 0〜5番ピンを使用 */
         col-gpios
-            = <&mcp23017  0 GPIO_ACTIVE_HIGH> // GPA0 (R_COL0)
-            , <&mcp23017  1 GPIO_ACTIVE_HIGH> // GPA1 (R_COL1)
-            , <&mcp23017  2 GPIO_ACTIVE_HIGH> // GPA2 (R_COL2)
-            , <&mcp23017  3 GPIO_ACTIVE_HIGH> // GPA3 (R_COL3)
-            , <&mcp23017  4 GPIO_ACTIVE_HIGH> // GPA4 (R_COL4)
-            , <&mcp23017  5 GPIO_ACTIVE_HIGH> // GPA5 (R_COL5)
+            = <&mcp23017  0 GPIO_ACTIVE_HIGH> // GPA0 (COL0)
+            , <&mcp23017  1 GPIO_ACTIVE_HIGH> // GPA1 (COL1)
+            , <&mcp23017  2 GPIO_ACTIVE_HIGH> // GPA2 (COL2)
+            , <&mcp23017  3 GPIO_ACTIVE_HIGH> // GPA3 (COL3)
+            , <&mcp23017  4 GPIO_ACTIVE_HIGH> // GPA4 (COL4)
+            , <&mcp23017  5 GPIO_ACTIVE_HIGH> // GPA5 (COL5)
             ;
     };
 
