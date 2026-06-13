@@ -161,10 +161,26 @@
             //<&zip_temp_layer 5 500>;                              //オートマウスレイヤーの選択
     };
 
-    left_encoder: encoder_left {
+    left_encoder_1: encoder_left_1 {
+        compatible = "alps,ec11";
+        a-gpios = <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
+        status = "disabled";
+    };
+
+    left_encoder_2: encoder_left_2 {
         compatible = "alps,ec11";
         a-gpios = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
+        status = "disabled";
+    };
+
+    left_encoder_3: encoder_left_3 {
+        compatible = "alps,ec11";
+        a-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
         status = "disabled";
     };
@@ -179,7 +195,7 @@
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
+        sensors = <&left_encoder_1 &left_encoder_2 &left_encoder_3 &right_encoder>;
         triggers-per-rotation = <10>;
     };
 
