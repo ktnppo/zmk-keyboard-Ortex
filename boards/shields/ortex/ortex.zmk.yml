@@ -1,0 +1,8 @@
+file_format: "1"
+id: ortex
+name: ortex
+type: shield
+url: https://github.com/ktnppo/zmk-keyboard-Ortex
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
