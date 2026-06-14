@@ -6,9 +6,6 @@
 // 1. IOエクスパンダ(MCP23017)の定義
 &xiao_i2c {
     status = "okay";
-    /* XIAO nRF52840のデフォルトI2Cピン（P0.04/P0.05）を使用 */
-    pinctrl-0 = <&i2c1_default>;
-    pinctrl-names = "default", "sleep";
 
     mcp23017: mcp23017@20 {
         compatible = "microchip,mcp230xx";
