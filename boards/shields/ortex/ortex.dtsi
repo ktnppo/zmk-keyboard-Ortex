@@ -7,16 +7,16 @@
 &i2c0 {
     status = "okay";
     /* XIAO nRF52840のデフォルトI2Cピン（P0.04/P0.05）を使用 */
-    pinctrl-0 = <&i2c0_default>
+    pinctrl-0 = <&i2c0_default>;
     pinctrl-names = "default";
 
     mcp23017: mcp23017@20 {
-        compatible = "microchip,mcp23017";
+        compatible = "microchip,mcp230xx";
         status = "okay";
         reg = <0x20>; // A0, A1, A2がすべてGNDなのでアドレスは0x20
         gpio-controller;
         #gpio-cells = <2>;
-
+        ngpios = <16>;
         /* 割り込みピンの設定 (R_I2C_INT -> XIAOのP1.11 / D6ピン) */
         int-gpios = <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
