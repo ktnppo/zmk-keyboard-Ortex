@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: ktnppo
-      url-base: https://github.com/kitnppo
+      url-base: https://github.com/ktnppo
     - name: badjeff    # <-- PMW3610
       url-base: https://github.com/badjeff
     # - name: sekigon-gonnoc  # <-- PAW3222
