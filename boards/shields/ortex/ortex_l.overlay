@@ -1,4 +1,4 @@
-#include "ortex_test.dtsi"
+#include "ortex.dtsi"
 
 &left_encoder_1 {
     status = "okay";
