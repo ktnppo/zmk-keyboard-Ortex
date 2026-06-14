@@ -154,12 +154,12 @@
 
         /* ROW（行）の定義：GPB0〜GPB4 ＝ 8〜12番ピンを使用 */
         row-gpios
-            = <&mcp23017  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB0 (ROW0)
-            , <&mcp23017  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB1 (ROW1)
-            , <&mcp23017 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB2 (ROW2)
-            , <&mcp23017 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB3 (ROW3)
-            , <&mcp23017 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB4 (ROW4)
-            , <&mcp23017 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // GPB5 (ROW5)
+            = <&mcp23017  8 (GPIO_ACTIVE_HIGH)> // GPB0 (ROW0)
+            , <&mcp23017  9 (GPIO_ACTIVE_HIGH)> // GPB1 (ROW1)
+            , <&mcp23017 10 (GPIO_ACTIVE_HIGH)> // GPB2 (ROW2)
+            , <&mcp23017 11 (GPIO_ACTIVE_HIGH)> // GPB3 (ROW3)
+            , <&mcp23017 12 (GPIO_ACTIVE_HIGH)> // GPB4 (ROW4)
+            , <&mcp23017 13 (GPIO_ACTIVE_HIGH)> // GPB5 (ROW5)
             ;
 
         /* COL（列）の定義：GPA0〜GPA5 ＝ 0〜5番ピンを使用 */
