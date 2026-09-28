@@ -121,7 +121,7 @@
 &trans        &trans        &trans            &trans             &trans
             >;
 
-            sensor-bindings = <&trans>, <&trans>, <&trans>, <&trans>;
+            sensor-bindings = <&scroll_right_left>, <&inc_dec_kp LG(EQUAL) LG(MINUS)>, <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&scroll_up_down>;
         };
 
         layer_2 {
@@ -137,7 +137,7 @@
 &trans        &trans        &trans            &trans             &trans
             >;
 
-            sensor-bindings = <&trans>, <&trans>, <&trans>, <&trans>;
+            sensor-bindings = <&scroll_right_left>, <&inc_dec_kp LG(EQUAL) LG(MINUS)>, <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&scroll_up_down>;
         };
 
         layer_3 {
@@ -152,7 +152,7 @@
 &trans        &trans        &trans            &trans             &trans
             >;
 
-            sensor-bindings = <&trans>, <&trans>, <&trans>, <&trans>;
+            sensor-bindings = <&scroll_right_left>, <&inc_dec_kp LG(EQUAL) LG(MINUS)>, <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&scroll_up_down>;
         };
 
         layer_4 {
@@ -167,7 +167,7 @@
 &trans        &trans        &trans            &trans             &trans
             >;
 
-            sensor-bindings = <&trans>, <&trans>, <&trans>, <&trans>;
+            sensor-bindings = <&scroll_right_left>, <&inc_dec_kp LG(EQUAL) LG(MINUS)>, <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&scroll_up_down>;
         };
 
         MOUSE {
@@ -182,7 +182,7 @@
 &trans        &trans        &trans            &trans             &trans
             >;
 
-            sensor-bindings = <&trans>, <&trans>, <&trans>, <&trans>;
+            sensor-bindings = <&scroll_right_left>, <&inc_dec_kp LG(EQUAL) LG(MINUS)>, <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&scroll_up_down>;
         };
 
         SCROLL {
@@ -197,7 +197,7 @@
 &trans        &trans        &trans            &trans             &trans
             >;
 
-            sensor-bindings = <&trans>, <&trans>, <&trans>, <&trans>;
+            sensor-bindings = <&scroll_right_left>, <&inc_dec_kp LG(EQUAL) LG(MINUS)>, <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&scroll_up_down>;
         };
     };
 };
