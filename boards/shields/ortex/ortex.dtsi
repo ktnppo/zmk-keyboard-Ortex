@@ -164,12 +164,12 @@
 
         /* COL（列）の定義：GPA0〜GPA5 ＝ 0〜5番ピンを使用 */
         col-gpios
-            = <&mcp23017  0 GPIO_ACTIVE_HIGH> // GPA0 (COL0)
-            , <&mcp23017  1 GPIO_ACTIVE_HIGH> // GPA1 (COL1)
-            , <&mcp23017  2 GPIO_ACTIVE_HIGH> // GPA2 (COL2)
-            , <&mcp23017  3 GPIO_ACTIVE_HIGH> // GPA3 (COL3)
-            , <&mcp23017  4 GPIO_ACTIVE_HIGH> // GPA4 (COL4)
-            , <&mcp23017  5 GPIO_ACTIVE_HIGH> // GPA5 (COL5)
+            = <&mcp23017  5 GPIO_ACTIVE_HIGH> // GPA0 (COL0)
+            , <&mcp23017  4 GPIO_ACTIVE_HIGH> // GPA1 (COL1)
+            , <&mcp23017  3 GPIO_ACTIVE_HIGH> // GPA2 (COL2)
+            , <&mcp23017  2 GPIO_ACTIVE_HIGH> // GPA3 (COL3)
+            , <&mcp23017  1 GPIO_ACTIVE_HIGH> // GPA4 (COL4)
+            , <&mcp23017  0 GPIO_ACTIVE_HIGH> // GPA5 (COL5)
             ;
     };
 
